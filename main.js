@@ -10,4 +10,8 @@ AddToDoButton.addEventListener('click', function (){
     inputField.value = '';
     paragraph.addEventListener('click', function (){
         paragraph.style.textDecoration = 'line-through';
+    })
+    paragraph.addEventListener('dblclick', function (){
+        toDoContainer.removeChild(paragraph)
+    })
 })
